@@ -1,21 +1,131 @@
 aid: latitude-communications
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/latitude-communications.png
 name: Latitude Communications
-description: Latitude Communications is a company surfaced as a portfolio company of canaan-partners and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: 'Latitude Communications, Inc. was a Santa Clara, California enterprise conferencing
+  company, incorporated in April 1993 and venture-backed by Mayfield Fund, Menlo Ventures, Asset
+  Management Associates, and Canaan Ventures (Canaan Partners). It developed, sold, and hosted
+  MeetingPlace, an integrated voice and web conferencing system for geographically dispersed
+  enterprises, first shipped commercially in December 1994 and sold to more than 430 enterprise
+  customers by the end of 2002, including Aetna, Cisco, Credit Suisse First Boston, Fidelity
+  Investments, Lockheed Martin, Oracle, and the U.S. Federal Reserve Bank. The company IPO''d on
+  the Nasdaq National Market under the symbol LATD at $12.00 per share in May 1999 and reported
+  revenue of $43.4 million in 2000, $33.9 million in 2001, and $40.5 million in 2002. Cisco
+  Systems acquired Latitude in a cash merger at $3.95 per share, completed in late 2003; Latitude
+  filed a Form 15 terminating its SEC registration on 2004-01-13, and MeetingPlace was absorbed
+  into Cisco''s conferencing line as Cisco Unified MeetingPlace. The company no longer operates as
+  an independent entity and never published a public API, developer portal, SDK, or
+  machine-readable interface — its 10-K describes only internally developed APIs used to integrate
+  MeetingPlace with web, e-mail, and fax servers. This profile is retained as a historical record
+  of the Canaan Partners portfolio and is not an active API provider. NOTE: unrelated to the
+  present-day latitude.sh bare-metal cloud provider and to the parked latitude.com page (see
+  x-disambiguation).'
 url: https://raw.githubusercontent.com/api-evangelist/latitude-communications/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - canaan-partners
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: historical
+x-tier-reason: acquired-2003-no-api-surface
+x-status: acquired
+x-acquired-by: Cisco Systems, Inc.
+x-acquired-year: 2003
+x-acquisition-value: $3.95 per share in cash
+x-acquisition-source: https://www.sec.gov/Archives/edgar/data/1078425/000104746903039065/a2123881zdefm14a.htm
+x-headquarters: 2121 Tasman Drive, Santa Clara, CA 95054, United States
+x-founded: '1993-04'
+x-sec-cik: '0001078425'
+x-sec-file-number: 000-25475
+x-sec-sic: '7373'
+x-former-ticker: NASDAQ:LATD
+x-deregistered: '2004-01-13'
+x-investor-verification:
+  claim: canaan-partners
+  verified: true
+  evidence: 'IPO prospectus (424B4, filed 1999-05-07) principal-stockholders table lists "Entities
+    affiliated with Canaan Ventures" holding 784,090 shares, 5.0% before the offering. The same
+    table lists Mayfield Fund (32.5%), Menlo Ventures IV, L.P. (28.4%), and Asset Management
+    Associates (6.8%).'
+  source: https://www.sec.gov/Archives/edgar/data/1078425/0001012870-99-001455.txt
+x-enrichment:
+  last_run: '2026-07-19'
+  result: no-api-surface
+  artifacts: none
+  rationale: 'Entity is defunct (acquired by Cisco Systems in 2003, SEC registration terminated
+    2004-01-13) and published no public API, developer portal, SDK, CLI, specification, or
+    machine-readable interface. Its original hosts no longer belong to it: latitude.com is a
+    parked page owned by an unrelated party and meetingplace.net no longer presents a valid
+    certificate. Probing those hosts would attribute a third party''s posture to Latitude, so no
+    well-known, domain-security, or vulnerability-disclosure artifacts were written. No artifacts
+    were generated; fabricating any would be unfaithful.'
+  probed:
+  - url: https://latitude.com/
+    status: 200
+    note: parked page embedding a Google Form; no company information; not Latitude Communications
+  - url: https://latitude.com/.well-known/security.txt
+    status: 404
+  - url: https://latitude.com/llms.txt
+    status: 404
+  - url: https://latitude-communications.com/
+    status: 403
+    note: unverified, does not resolve to any Latitude Communications property
+  - url: https://meetingplace.net/
+    status: 0
+    note: 'TLS failure — no alternative certificate subject name matches the host; the former
+      MeetingPlace product site (live in 2002 per the Internet Archive) is no longer operated'
+x-disambiguation:
+- name: Latitude.sh
+  url: https://www.latitude.sh/
+  relationship: unrelated-name-collision
+  note: 'Global bare-metal and GPU cloud infrastructure provider ("the global AI enabler cloud")
+    operating across 25 locations. It DOES publish a real public API, developer portal, Go and
+    Node SDKs, a CLI, and a Terraform provider (probed 2026-07-19: https://www.latitude.sh/ and
+    https://docs.latitude.sh/ both HTTP 200). Founded decades after Latitude Communications and
+    entirely unrelated to it — do not merge these profiles or attribute latitude.sh artifacts
+    here.'
+- name: latitude.com (present day)
+  url: https://latitude.com/
+  relationship: domain-changed-hands
+  note: 'The domain Latitude Communications used through at least 2002 (Internet Archive snapshot
+    2002-05-29 shows the MeetingPlace marketing site and the webmaster@, support@, and info@
+    latitude.com contacts). As of 2026-07-19 it serves a bare page embedding a Google Form with no
+    company identification, registered through GoDaddy. Not operated by any successor to Latitude
+    Communications.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Conferencing
+- Web Conferencing
+- Voice Conferencing
+- Unified Communications
+- Collaboration
+- Enterprise Software
+- Telecommunications
+- Acquired
+- Historical
 apis: []
+common:
+- type: Acquirer
+  name: Cisco Systems, Inc.
+  url: https://www.cisco.com/
+- type: Filings
+  name: SEC EDGAR — Latitude Communications, Inc. (CIK 0001078425)
+  url: https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001078425&type=&dateb=&owner=include&count=40
+- type: Archive
+  name: Internet Archive — latitude.com (2002-05-29)
+  url: http://web.archive.org/web/20020529230735/http://latitude.com:80/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
