@@ -101,7 +101,7 @@ x-disambiguation:
     latitude.com contacts). As of 2026-07-19 it serves a bare page embedding a Google Form with no
     company identification, registered through GoDaddy. Not operated by any successor to Latitude
     Communications.'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
