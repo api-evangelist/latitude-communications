@@ -42,6 +42,9 @@ description: 'Latitude Communications, Inc. was a Santa Clara, California enterp
   present-day latitude.sh bare-metal cloud provider and to the parked latitude.com page (see
   x-disambiguation).'
 url: https://raw.githubusercontent.com/api-evangelist/latitude-communications/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "The company no longer operates as an independent entity and never published a public API, developer portal, SDK, or machine-readable interface — its 10-K describes only internally developed APIs used "
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
