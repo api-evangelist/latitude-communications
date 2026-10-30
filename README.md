@@ -64,69 +64,28 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Latitude Communications, Inc. was a Santa Clara, California enterprise conferencing company,
-incorporated in April 1993 and venture-backed by Mayfield Fund, Menlo Ventures, Asset Management
-Associates, and Canaan Ventures (Canaan Partners).
+> **Acquired or rebranded.** This company was acquired, merged or renamed. Its API, if it still exists, is offered under another name. This profile is kept as a historical record and is not maintained or rated.
 
-It developed, sold, and hosted **MeetingPlace**, an integrated voice and web conferencing system for
-geographically dispersed enterprises. MeetingPlace shipped commercially in December 1994 and had been
-sold to more than 430 enterprise customers by the end of 2002 — including Aetna, Cisco, Credit Suisse
-First Boston, Fidelity Investments, Lockheed Martin, Oracle, and the U.S. Federal Reserve Bank. It was
-offered both as an outsourced hosted service billed on usage and as an on-premises licensed platform.
+Latitude Communications, Inc. was a Santa Clara, California enterprise conferencing company, incorporated in April 1993 and venture-backed by Mayfield Fund, Menlo Ventures, Asset Management Associates, and Canaan Ventures (Canaan Partners). It developed, sold, and hosted MeetingPlace, an integrated voice and web conferencing system for geographically dispersed enterprises, first shipped commercially in December 1994 and sold to more than 430 enterprise customers by the end of 2002, including Aetna, Cisco, Credit Suisse First Boston, Fidelity Investments, Lockheed Martin, Oracle, and the U.S. Federal Reserve Bank. The company IPO'd on the Nasdaq National Market under the symbol LATD at $12.00 per share in May 1999 and reported revenue of $43.4 million in 2000, $33.9 million in 2001, and $40.5 million in 2002. Cisco Systems acquired Latitude in a cash merger at $3.95 per share, completed in late 2003; Latitude filed a Form 15 terminating its SEC registration on 2004-01-13, and MeetingPlace was absorbed into Cisco's conferencing line as Cisco Unified MeetingPlace. The company no longer operates as an independent entity and never published a public API, developer portal, SDK, or machine-readable interface — its 10-K describes only internally developed APIs used to integrate MeetingPlace with web, e-mail, and fax servers. This profile is retained as a historical record of the Canaan Partners portfolio and is not an active API provider. NOTE: unrelated to the present-day latitude.sh bare-metal cloud provider and to the parked latitude.com page (see x-disambiguation).
 
-The company IPO'd on the Nasdaq National Market under the symbol **LATD** at $12.00 per share in May
-1999. Cisco Systems acquired Latitude in a cash merger at $3.95 per share, completed in late 2003;
-Latitude filed a Form 15 terminating its SEC registration on 2004-01-13. MeetingPlace was absorbed
-into Cisco's conferencing line as Cisco Unified MeetingPlace.
+**Areas:** Company · Conferencing · Web Conferencing · Voice Conferencing · Unified Communications · Collaboration · Enterprise Software · Telecommunications · Acquired · Historical
 
-- **Status:** acquired (2003)
-- **Acquired by:** [Cisco Systems, Inc.](https://www.cisco.com/) — $3.95 per share in cash
-- **Backed by:** canaan-partners (verified — 5.0% pre-IPO holder in the 424B4)
-- **Founded:** April 1993
-- **Headquarters:** 2121 Tasman Drive, Santa Clara, CA 95054
-- **SEC:** CIK 0001078425, file number 000-25475, SIC 7373 — deregistered 2004-01-13
-- **Sector:** enterprise software / unified communications / conferencing
+## Latitude Communications on APIs.io (historical record)
 
-### Revenue (per SEC filings)
+Everything profiled for Latitude Communications is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/latitude-communications/](https://apis.io/providers/latitude-communications/)** — or go straight to one of the APIs or properties below.
 
-| Year | Revenue | Net result |
-|---|---|---|
-| 2000 | $43.4M | $1.7M net income |
-| 2001 | $33.9M | $7.4M net loss |
-| 2002 | $40.5M | $18.5M net loss |
+## API Evangelist rating
 
-## No API surface
+**Not rated** — this company is recorded as acquired or rebranded, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
 
-This entity is defunct and never published a public API, developer portal, SDK, CLI, specification,
-or machine-readable interface. Its 2002 10-K describes only *internally developed* APIs used to
-integrate MeetingPlace with web servers, e-mail systems, and fax servers — there was no public
-developer program.
+## How this profile is made
 
-The enrichment pipeline was run on 2026-07-19 and produced **no artifacts**. There is nothing to
-harvest, and fabricating any would be unfaithful to the record. Critically, the company's original
-hosts no longer belong to it, so they were **not** probed for well-known, domain-security, or
-vulnerability-disclosure artifacts — doing so would attribute a third party's posture to Latitude.
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-| Probe (2026-07-19) | Status | Note |
-|---|---|---|
-| `https://latitude.com/` | 200 | Parked page embedding a Google Form. No company information. Not Latitude Communications. |
-| `https://latitude.com/.well-known/security.txt` | 404 | |
-| `https://latitude.com/llms.txt` | 404 | |
-| `https://latitude-communications.com/` | 403 | Unverified; not a Latitude Communications property. |
-| `https://meetingplace.net/` | — | TLS failure, no matching certificate subject. The former MeetingPlace product site (live in 2002 per the Internet Archive) is no longer operated. |
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Latitude Communications: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-## Name collisions — this is not the same company
+## Open an issue
 
-| Name | URL | Relationship |
-|---|---|---|
-| Latitude.sh | https://www.latitude.sh/ | **Unrelated.** Global bare-metal and GPU cloud infrastructure provider across 25 locations. It *does* publish a real public API, developer portal, Go and Node SDKs, a CLI, and a Terraform provider (probed 2026-07-19: site and `docs.latitude.sh` both HTTP 200). Founded decades later. Do not merge these profiles or attribute latitude.sh artifacts here. |
-| latitude.com (present day) | https://latitude.com/ | **Domain changed hands.** Latitude Communications used this domain through at least 2002 (Internet Archive snapshot 2002-05-29 shows the MeetingPlace marketing site). It now serves a bare Google Form page with no company identification, registered through GoDaddy. |
-
-## Sources
-
-- SEC EDGAR filing history — [CIK 0001078425](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001078425&type=&dateb=&owner=include&count=40) (71 filings, 1999-02-25 through 2004-02-10)
-- [Form 10-K for FY2002](https://www.sec.gov/Archives/edgar/data/1078425/000104746903010827/a2106667z10-k.htm) — business description, revenue, customers, internal APIs
-- [424B4 IPO prospectus, 1999-05-07](https://www.sec.gov/Archives/edgar/data/1078425/0001012870-99-001455.txt) — founding date, LATD listing, $12.00 offering price, principal stockholders
-- [DEFM14A merger proxy, 2003-12-03](https://www.sec.gov/Archives/edgar/data/1078425/000104746903039065/a2123881zdefm14a.htm) — Cisco merger at $3.95 per share
-- [Form 15, 2004-01-13](https://www.sec.gov/Archives/edgar/data/1078425/000119312504003452/d1512g.htm) — deregistration
-- [Internet Archive, latitude.com 2002-05-29](http://web.archive.org/web/20020529230735/http://latitude.com:80/)
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/latitude-communications/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
